@@ -1,0 +1,132 @@
+:root {
+  --bg: #0c0a08;
+  --surface: #111009;
+  --card: rgba(255,255,255,0.03);
+  --cardBorder: rgba(255,255,255,0.07);
+  --activeBg: rgba(201,168,76,0.07);
+  --activeBdr: rgba(201,168,76,0.28);
+  --gold: #c9a84c;
+  --goldLight: #e8c97a;
+  --muted: #7a7060;
+  --dim: #4a4438;
+  --text: #d4c9b8;
+  --textDim: #a09880;
+  --red: #d06060;
+  --green: #4a8c5c;
+  --greenLight: #7acc9a;
+  
+  /* Utilities */
+  --invertImg: 0;
+  --scrollbarThumb: rgba(201,168,76,0.2);
+}
+
+body.theme-light {
+  --bg: #faf7f2;
+  --surface: #ffffff;
+  --card: rgba(0,0,0,0.03);
+  --cardBorder: rgba(0,0,0,0.08);
+  --activeBg: rgba(201,168,76,0.12);
+  --activeBdr: rgba(201,168,76,0.4);
+  --gold: #b38b22;
+  --goldLight: #8a6810;
+  --muted: #887e6b;
+  --dim: #b8b0a0;
+  --text: #2a2620;
+  --textDim: #5c5548;
+  --red: #c04040;
+  --green: #3a754c;
+  --greenLight: #2a653c;
+  
+  --invertImg: 1;
+  --scrollbarThumb: rgba(201,168,76,0.4);
+}
+
+body.theme-sakura {
+  --bg: #fff0f5;
+  --surface: #ffffff;
+  --card: rgba(255,182,193,0.1);
+  --cardBorder: rgba(255,182,193,0.4);
+  --activeBg: rgba(219,112,147,0.12);
+  --activeBdr: rgba(219,112,147,0.4);
+  --gold: #db7093;
+  --goldLight: #c71585;
+  --muted: #dda0dd;
+  --dim: #e6e6fa;
+  --text: #4a0e2e;
+  --textDim: #6b2e4b;
+  --red: #ff69b4;
+  --green: #2e8b57;
+  --greenLight: #3cb371;
+  
+  --invertImg: 1;
+  --scrollbarThumb: rgba(219,112,147,0.4);
+}
+
+body.theme-dojo {
+  --bg: #2a1b14;
+  --surface: #3a261c;
+  --card: rgba(187,143,101,0.05);
+  --cardBorder: rgba(187,143,101,0.15);
+  --activeBg: rgba(210,105,30,0.15);
+  --activeBdr: rgba(210,105,30,0.4);
+  --gold: #d2691e;
+  --goldLight: #cd853f;
+  --muted: #8b5a2b;
+  --dim: #5c4033;
+  --text: #f5deb3;
+  --textDim: #deb887;
+  --red: #b22222;
+  --green: #556b2f;
+  --greenLight: #6b8e23;
+  
+  --invertImg: 0;
+  --scrollbarThumb: rgba(210,105,30,0.4);
+}
+
+body.theme-balanced {
+  --bg: #191919;
+  --surface: #282828;
+  --card: rgba(255,255,255,0.04);
+  --cardBorder: rgba(19,82,149,0.3);
+  --activeBg: rgba(180,19,25,0.15);
+  --activeBdr: #b41319; 
+  --gold: #ffc107;
+  --goldLight: #ffcd38;
+  --muted: #abb8c3;
+  --dim: #32373c;
+  --text: #ffffff;
+  --textDim: #efefef;
+  --red: #d80000;
+  --green: #135295;
+  --greenLight: #1877f2;
+  
+  --invertImg: 0;
+  --scrollbarThumb: rgba(19,82,149,0.5);
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: Georgia, serif;
+}
+
+input, textarea, select {
+  font-family: Georgia, serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbarThumb); border-radius: 2px; }

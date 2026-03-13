@@ -1,0 +1,25 @@
+# .cursorrules
+
+Project: Karate Tracker — React/TypeScript family training app
+
+Tech stack:
+  - React 18, TypeScript, Vite
+  - Tailwind CSS for styling
+  - Local storage → Firebase (migration in progress)
+  - Google Calendar API
+
+Code standards:
+  - Functional components only, no class components
+  - Custom hooks for all data logic (no business logic in components)
+  - Components max 150 lines; split larger ones
+  - TypeScript strict mode — no 'any'
+  - File naming: PascalCase for components, camelCase for hooks (useXxx)
+
+Data model:
+  - Student: { id, name, belt, birthdate, photoUrl }
+  - Session: { id, date, studentId, type, duration, notes, techniquesWorkedOn }
+  - Belt: { rank, color, minAge, requirements[] }
+
+Do not suggest Redux or Zustand. Use React Context only if needed across 3+ components.
+Always include loading and error states.
+Write JSDoc for all hooks.
